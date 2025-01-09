@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teach Teck - University Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+            header .buttons {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                display: flex;
+                align-items: center;
+            }
+
+                header .buttons button {
+                    background: white;
+                    color: #4CAF50;
+                    border: 1px solid #4CAF50;
+                    padding: 10px 15px;
+                    margin-left: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                    header .buttons button:hover {
+                        background: #45a049;
+                        color: white;
+                    }
+
+            header img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+
+        .main {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #333;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+        }
+
+            .sidebar h2 {
+                margin-top: 0;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .sidebar ul {
+                list-style: none;
+                padding: 0;
+            }
+
+                .sidebar ul li {
+                    margin: 15px 0;
+                }
+
+                    .sidebar ul li a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 18px;
+                    }
+
+                        .sidebar ul li a:hover {
+                            text-decoration: underline;
+                        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+            .content h1 {
+                color: #4CAF50;
+                margin-bottom: 20px;
+            }
+
+            .content p {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+            footer a {
+                color: #4CAF50;
+                text-decoration: none;
+            }
+
+                footer a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+    <script>
+        function toggleImage() {
+            const img = document.querySelector('header img');
+            if (img.style.display === 'none') {
+                img.style.display = 'block';
+            } else {
+                img.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Teach Teck - University Portal</h1>
+        <div class="buttons">
+            <button onclick="alert('Navigate to Home')">Home</button>
+            <button onclick="window.location.href='C:\\Users\\Abo Amin\\Desktop\\H.HTML'">Log In</button>
+            <button onclick="window.location.href='C:\\Users\\Abo Amin\\Desktop\\sign up .html'">sign up</button>
+            <img src="https://via.placeholder.com/50" alt="University Logo" onclick="toggleImage()">
+        </div>
+    </header>
+
+    <div class="main">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#" onclick="alert('Navigate to Teachers')">Teachers</a></li>
+                <li><a href="#" onclick="alert('Navigate to Students')">Students</a></li>
+                <li><a href="#" onclick="alert('Navigate to Resources')">Educational Resources</a></li>
+                <li><a href="#" onclick="alert('Navigate to Feedback')">Feedback</a></li>
+                <li><a href="#" onclick="alert('Navigate to Programs')">Programs</a></li>
+                <li><a href="#" onclick="alert('Navigate to Technology Access')">Technology Access</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h1>Welcome to University Portal</h1>
+            <p>
+                This portal is dedicated to managing university resources, including information about teachers, students, educational resources, and professional development programs.
+                Explore the menu on the left to navigate through the different sections.
+            </p>
+            <img src="https://via.placeholder.com/800x400" alt="University Image" style="width: 100%; border-radius: 8px; margin-top: 20px;">
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by <a href="#">Teach Teck</a>. All rights reserved � 2025.</p>
+    </footer>
+</body>
+</html>
